@@ -23,6 +23,10 @@ POSITIVE_WORDS = [
     "chill",
     "relaxed",
     "amazing",
+    # Part 3 fix: slang and emoji signals
+    "fire",
+    "sick",
+    "🔥",
 ]
 
 NEGATIVE_WORDS = [
@@ -36,6 +40,9 @@ NEGATIVE_WORDS = [
     "stressed",
     "hate",
     "boring",
+    # Part 3 fix: slang and emoji signals
+    "worst",
+    "😩",
 ]
 
 # ---------------------------------------------------------------------
@@ -50,6 +57,17 @@ SAMPLE_POSTS = [
     "This is fine",
     "So excited for the weekend",
     "I am not happy about this",
+    "Lowkey stressed but kind of proud of myself",
+    "I absolutely love getting stuck in traffic",
+    "that concert was sick, no cap 🔥",
+    "I'm fine 🙂",
+    "exhausted but proud of myself",
+    "ugh mondays are the worst 😩",
+    "just got the job!!! sooo happy 😭",
+    "not bad at all",
+    "nothing special, just another day",
+    "my phone died and I missed the bus, great start 🙄",
+    "this food is fire 🔥",
 ]
 
 # Human labels for each post above.
@@ -65,6 +83,17 @@ TRUE_LABELS = [
     "neutral",   # "This is fine"
     "positive",  # "So excited for the weekend"
     "negative",  # "I am not happy about this"
+    "mixed",     # "Lowkey stressed but kind of proud of myself"
+    "negative",  # "I absolutely love getting stuck in traffic" (sarcasm)
+    "positive",  # "that concert was sick, no cap 🔥" (slang: sick = great)
+    "neutral",   # "I'm fine 🙂" (ambiguous: could be masking a bad mood)
+    "mixed",     # "exhausted but proud of myself"
+    "negative",  # "ugh mondays are the worst 😩"
+    "positive",  # "just got the job!!! sooo happy 😭" (crying emoji = happy tears)
+    "positive",  # "not bad at all" (negated negative)
+    "neutral",   # "nothing special, just another day"
+    "negative",  # "my phone died and I missed the bus, great start 🙄" (sarcasm)
+    "positive",  # "this food is fire 🔥" (slang: fire = great)
 ]
 
 # TODO: Add 5-10 more posts and labels.
